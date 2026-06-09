@@ -1,0 +1,11 @@
+version: 3
+
+agent:
+  authtoken: your_token_here
+
+tunnels:
+  ollama:
+    proto: http
+    addr: host.docker.internal:11434
+    basic_auth:
+      - "${NGROK_BASIC_AUTH}"

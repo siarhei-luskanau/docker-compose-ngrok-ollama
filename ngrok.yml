@@ -1,9 +1,0 @@
-version: "3"
-authtoken: ${NGROK_AUTHTOKEN}
-
-tunnels:
-  ollama:
-    proto: http
-    addr: ${OLLAMA_ADDR}
-    basic_auth:
-      - "${NGROK_BASIC_AUTH}"

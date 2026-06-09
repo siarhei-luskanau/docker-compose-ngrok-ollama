@@ -19,7 +19,7 @@ jobs:
         run: |
           python3 -c "
           import yaml, sys
-          files = ['docker-compose.yml', 'ngrok.yml']
+          files = ['docker-compose.yml', 'ngrok-example.yml']
           errors = []
           for f in files:
               try:
@@ -36,6 +36,6 @@ jobs:
 
       - name: Validate docker-compose config
         run: |
-          cp .env_example .env
+          cp ngrok-example.yml ngrok.yml
           docker compose config --quiet
-          rm .env
+          rm ngrok.yml
