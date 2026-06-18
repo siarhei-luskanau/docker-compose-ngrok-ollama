@@ -1,6 +1,6 @@
 services:
   ngrok:
-    image: ngrok/ngrok:3.39.7-debian
+    image: ngrok/ngrok:3.39.8-debian
     restart: unless-stopped
     command:
       - "start"
