@@ -1,7 +1,7 @@
 # https://ngrok.com/docs/using-ngrok-with/docker/compose#using-ngrok-with-docker-compose
 services:
   ngrok:
-    image: ngrok/ngrok:latest
+    image: ngrok/ngrok:3.39.12-debian
     command:
       - "http"
       - "--url=${NGROK_URL}"
